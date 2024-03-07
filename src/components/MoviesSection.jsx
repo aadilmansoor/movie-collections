@@ -12,7 +12,7 @@ const MoviesSection = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isShowSearchResults, setIsShowSearchResults] = useState(false);
 
-  const debouncedValue = useDebounce(searchText, 300);
+  const debouncedValue = useDebounce(searchText, 500);
 
   const options = {
     method: "GET",

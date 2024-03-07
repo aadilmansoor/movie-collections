@@ -6,11 +6,9 @@ import Navbar from "../components/Navbar";
 
 const MovieDetails = () => {
   const { id } = useParams();
-  console.log(id);
 
   const [movieData, setMovieData] = useState({});
   const [isMovieLoading, setIsMovieLoading] = useState(true);
-  console.log(movieData);
 
   const options = {
     method: "GET",

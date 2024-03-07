@@ -6,7 +6,6 @@ import MovieCard from "./MovieCard";
 const SearchResults = ({ searchText }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [movieResult, setMovieResult] = useState([]);
-  console.log(movieResult);
 
   const options = {
     method: "GET",
