@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Loader from "./Loader";
 import MovieCard from "./MovieCard";
+import { string } from "prop-types";
 
 const SearchResults = ({ searchText }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -74,4 +75,9 @@ const SearchResults = ({ searchText }) => {
     </div>
   );
 };
+
+SearchResults.propTypes = {
+  searchText: string,
+};
+
 export default SearchResults;
